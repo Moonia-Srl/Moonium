@@ -1,0 +1,38 @@
+#my-nft {
+  .ant-alert-warning {
+    border-radius: $border_radius_card;
+  }
+
+  .wallet-login {
+    width: 60%;
+
+    padding: 2%;
+    margin-top: 10vh;
+
+    @include respond-to(upto-sm) {
+      width: 100%;
+      margin-top: 5%;
+    }
+
+    .ant-card-body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      row-gap: $size_base_multiplier * 3;
+    }
+
+    .ant-btn {
+      width: 75%;
+      height: 56px;
+      max-width: 300px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      img {
+        width: $size_base_multiplier * 5;
+      }
+    }
+  }
+}

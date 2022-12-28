@@ -1,0 +1,100 @@
+{
+  "pages": {
+    "my-nft": {
+      "title": "My NFTs list",
+      "description": "Here you will find a list of the NFT you have purchased from the \"{{pName}}\" project",
+      "alert_message": "To get the benefits reserved for NFT owners, you must add your personal information on the <a href=\"/me\">Profile</a> page. This is required to link your wallet to your physical identity."
+    },
+    "me": {
+      "title": "Profile",
+      "description": "Please add your personal information to access special offer as token owner",
+      "form": {
+        "title": "Personal information",
+        "name": "Name",
+        "surname": "Surname",
+        "email": "E-mail",
+        "phone": "Phone number",
+        "submit": "Save info"
+      }
+    },
+    "login": {
+      "title": "Welcome",
+      "form": {
+        "email": "E-mail",
+        "password": "Password",
+        "submit": "Login"
+      }
+    },
+    "admin": {
+      "title": "Admin only page",
+      "description": "In this page is possible to retrieve personal informations, such as name, surname, email and phone number of the users that currently owns your NFTs. With this data you can contact them offchain and send coupon or discounts.",
+      "download": "Download owner list"
+    },
+    "cookie-policy": {
+      "title": "Cookie Policy",
+      "content": "<p>Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit. Duis eu <i>sollicitudin</i> nibh, at malesuada mauris. Phasellus vitae scelerisque tortor. Morbi sed quam dolor. Vivamus et mauris nec dui efficitur tincidunt at id tellus. In tincidunt quam in hendrerit semper. Curabitur urna purus, mattis at sapien eget, aliquet maximus justo. Maecenas eget faucibus mauris, non lobortis tellus. Phasellus a tincidunt elit. Curabitur aliquet lacus id rhoncus faucibus. Praesent id magna eu nisl convallis lacinia et pretium neque. Nunc in sapien in diam pellentesque porttitor vitae ac lorem. Pellentesque mollis facilisis pharetra. Quisque nisi magna, sagittis in justo sed, pharetra ultrices sem.</p><p>Maecenas ac elit posuere neque mattis elementum id luctus nisl. Etiam ac ullamcorper enim. Curabitur vel velit eu lorem tincidunt malesuada. Nulla massa dolor, condimentum sit amet enim ut, pharetra lacinia eros. Suspendisse purus enim, ultricies non magna vel, faucibus aliquam purus. Etiam iaculis nibh vel ante tincidunt, eget feugiat nulla dictum. Maecenas venenatis lorem non quam interdum pharetra. Morbi non libero aliquam, rhoncus lorem id, sollicitudin velit. Cras nec turpis orci. Duis posuere aliquam vehicula. Mauris volutpat suscipit placerat. Sed maximus justo sapien, at porta est convallis at. Ut molestie nisl sed orci bibendum pulvinar. Etiam massa risus, tincidunt id facilisis ac, rutrum sed risus.</p><p>Donec tempus risus quis sem lacinia faucibus. Nam ut est velit. Mauris ante leo, sodales quis dignissim in, gravida eu est. Praesent nibh tellus, tempor a maximus interdum, porttitor at justo. Fusce et velit faucibus, tincidunt odio vel, ullamcorper ligula. Aliquam convallis at enim vel elementum. Donec lacus velit, egestas eget sagittis rhoncus, tempus sit amet enim. Nullam volutpat justo quis nulla vestibulum tristique id a tortor.</p><p>Phasellus nisi massa, scelerisque sit amet metus et, elementum facilisis turpis. Vivamus luctus, leo sit amet ultrices maximus, purus nisi tincidunt orci, a commodo ligula elit quis quam. Ut molestie pretium porttitor. Fusce faucibus sollicitudin tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt mauris non nibh ultricies, eget condimentum eros dapibus. Mauris posuere mi nec est facilisis, sit amet suscipit ex sollicitudin. Mauris vestibulum ex est. Nullam turpis ipsum, suscipit sed tortor suscipit, suscipit faucibus lectus. Nunc tristique libero eu cursus porta. Fusce lacinia justo quis sapien pulvinar viverra. Nam non interdum turpis. Quisque accumsan nunc ut dapibus interdum. In nec pharetra leo.</p><p>Nam ut commodo turpis. Sed a volutpat arcu. Phasellus laoreet sem accumsan viverra viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum neque nibh, molestie a tempus quis, elementum id nunc. Nunc facilisis lacus vitae semper gravida. Aenean blandit rhoncus fermentum. Vivamus hendrerit facilisis orci, a interdum felis convallis ut.</p>"
+    },
+    "privacy-policy": {
+      "title": "Privacy Policy",
+      "content": "<p>Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit. Duis eu <i>sollicitudin</i> nibh, at malesuada mauris. Phasellus vitae scelerisque tortor. Morbi sed quam dolor. Vivamus et mauris nec dui efficitur tincidunt at id tellus. In tincidunt quam in hendrerit semper. Curabitur urna purus, mattis at sapien eget, aliquet maximus justo. Maecenas eget faucibus mauris, non lobortis tellus. Phasellus a tincidunt elit. Curabitur aliquet lacus id rhoncus faucibus. Praesent id magna eu nisl convallis lacinia et pretium neque. Nunc in sapien in diam pellentesque porttitor vitae ac lorem. Pellentesque mollis facilisis pharetra. Quisque nisi magna, sagittis in justo sed, pharetra ultrices sem.</p><p>Maecenas ac elit posuere neque mattis elementum id luctus nisl. Etiam ac ullamcorper enim. Curabitur vel velit eu lorem tincidunt malesuada. Nulla massa dolor, condimentum sit amet enim ut, pharetra lacinia eros. Suspendisse purus enim, ultricies non magna vel, faucibus aliquam purus. Etiam iaculis nibh vel ante tincidunt, eget feugiat nulla dictum. Maecenas venenatis lorem non quam interdum pharetra. Morbi non libero aliquam, rhoncus lorem id, sollicitudin velit. Cras nec turpis orci. Duis posuere aliquam vehicula. Mauris volutpat suscipit placerat. Sed maximus justo sapien, at porta est convallis at. Ut molestie nisl sed orci bibendum pulvinar. Etiam massa risus, tincidunt id facilisis ac, rutrum sed risus.</p><p>Donec tempus risus quis sem lacinia faucibus. Nam ut est velit. Mauris ante leo, sodales quis dignissim in, gravida eu est. Praesent nibh tellus, tempor a maximus interdum, porttitor at justo. Fusce et velit faucibus, tincidunt odio vel, ullamcorper ligula. Aliquam convallis at enim vel elementum. Donec lacus velit, egestas eget sagittis rhoncus, tempus sit amet enim. Nullam volutpat justo quis nulla vestibulum tristique id a tortor.</p><p>Phasellus nisi massa, scelerisque sit amet metus et, elementum facilisis turpis. Vivamus luctus, leo sit amet ultrices maximus, purus nisi tincidunt orci, a commodo ligula elit quis quam. Ut molestie pretium porttitor. Fusce faucibus sollicitudin tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt mauris non nibh ultricies, eget condimentum eros dapibus. Mauris posuere mi nec est facilisis, sit amet suscipit ex sollicitudin. Mauris vestibulum ex est. Nullam turpis ipsum, suscipit sed tortor suscipit, suscipit faucibus lectus. Nunc tristique libero eu cursus porta. Fusce lacinia justo quis sapien pulvinar viverra. Nam non interdum turpis. Quisque accumsan nunc ut dapibus interdum. In nec pharetra leo.</p><p>Nam ut commodo turpis. Sed a volutpat arcu. Phasellus laoreet sem accumsan viverra viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum neque nibh, molestie a tempus quis, elementum id nunc. Nunc facilisis lacus vitae semper gravida. Aenean blandit rhoncus fermentum. Vivamus hendrerit facilisis orci, a interdum felis convallis ut.</p>"
+    },
+    "terms-of-service": {
+      "title": "Terms of Service",
+      "content": "<p>Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit. Duis eu <i>sollicitudin</i> nibh, at malesuada mauris. Phasellus vitae scelerisque tortor. Morbi sed quam dolor. Vivamus et mauris nec dui efficitur tincidunt at id tellus. In tincidunt quam in hendrerit semper. Curabitur urna purus, mattis at sapien eget, aliquet maximus justo. Maecenas eget faucibus mauris, non lobortis tellus. Phasellus a tincidunt elit. Curabitur aliquet lacus id rhoncus faucibus. Praesent id magna eu nisl convallis lacinia et pretium neque. Nunc in sapien in diam pellentesque porttitor vitae ac lorem. Pellentesque mollis facilisis pharetra. Quisque nisi magna, sagittis in justo sed, pharetra ultrices sem.</p><p>Maecenas ac elit posuere neque mattis elementum id luctus nisl. Etiam ac ullamcorper enim. Curabitur vel velit eu lorem tincidunt malesuada. Nulla massa dolor, condimentum sit amet enim ut, pharetra lacinia eros. Suspendisse purus enim, ultricies non magna vel, faucibus aliquam purus. Etiam iaculis nibh vel ante tincidunt, eget feugiat nulla dictum. Maecenas venenatis lorem non quam interdum pharetra. Morbi non libero aliquam, rhoncus lorem id, sollicitudin velit. Cras nec turpis orci. Duis posuere aliquam vehicula. Mauris volutpat suscipit placerat. Sed maximus justo sapien, at porta est convallis at. Ut molestie nisl sed orci bibendum pulvinar. Etiam massa risus, tincidunt id facilisis ac, rutrum sed risus.</p><p>Donec tempus risus quis sem lacinia faucibus. Nam ut est velit. Mauris ante leo, sodales quis dignissim in, gravida eu est. Praesent nibh tellus, tempor a maximus interdum, porttitor at justo. Fusce et velit faucibus, tincidunt odio vel, ullamcorper ligula. Aliquam convallis at enim vel elementum. Donec lacus velit, egestas eget sagittis rhoncus, tempus sit amet enim. Nullam volutpat justo quis nulla vestibulum tristique id a tortor.</p><p>Phasellus nisi massa, scelerisque sit amet metus et, elementum facilisis turpis. Vivamus luctus, leo sit amet ultrices maximus, purus nisi tincidunt orci, a commodo ligula elit quis quam. Ut molestie pretium porttitor. Fusce faucibus sollicitudin tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt mauris non nibh ultricies, eget condimentum eros dapibus. Mauris posuere mi nec est facilisis, sit amet suscipit ex sollicitudin. Mauris vestibulum ex est. Nullam turpis ipsum, suscipit sed tortor suscipit, suscipit faucibus lectus. Nunc tristique libero eu cursus porta. Fusce lacinia justo quis sapien pulvinar viverra. Nam non interdum turpis. Quisque accumsan nunc ut dapibus interdum. In nec pharetra leo.</p><p>Nam ut commodo turpis. Sed a volutpat arcu. Phasellus laoreet sem accumsan viverra viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum neque nibh, molestie a tempus quis, elementum id nunc. Nunc facilisis lacus vitae semper gravida. Aenean blandit rhoncus fermentum. Vivamus hendrerit facilisis orci, a interdum felis convallis ut.</p>"
+    },
+    "not-found": {
+      "title": "404 - Not Found",
+      "content": "Woops, the page yopu're looking for doesn't seem to exist. Please double check the URL and/or contact the site provider.",
+      "button": "Go back"
+    }
+  },
+  "components": {
+    "header": {
+      "drawer": {
+        "home": "My NFTs",
+        "profile": "Profile"
+      },
+      "popover": {
+        "profile": "Profile",
+        "disconnect": "Disconnect",
+        "logout": "Exit admin mode"
+      }
+    },
+    "connect_wallet": {
+      "title": "Login with your wallet",
+      "message": "In order to see your NFTs you must connect your wallet with Metamask",
+      "metamask": "Metamask",
+      "phantom": "Phantom",
+      "modal": {
+        "title": "Privacy Policy",
+        "description": "Please accept the <a href=\"/privacy-policy\" target=\"_blank\">privacy policy</a> to authorize your data usage before proceeding with the wallet connection",
+        "cancel": "Cancel",
+        "accept": "Accept"
+      }
+    }
+  },
+  "forms": {
+    "errors": {
+      "required": "The field is required",
+      "invalid_psw": "The password must contain at least one uppercase letter, one symbol and one number",
+      "invalid_email": "The provided mail is not valid",
+      "invalid_phone": "The provided phone number is not valid"
+    }
+  },
+  "errors": {
+    "title": "An error occurred",
+    "api_call_failed": "There was a problem with your request. please try again later",
+    "auth_failed": "Invalid username or password. Please try again later",
+    "token_expired": "Session expired. Please try again later",
+    "not_found": "The requested data can't be found, please try again later",
+    "wallet_not_connected": "No wallet has been connected",
+    "no_metamask": "Metamask extension is not installed",
+    "no_phantom": "Phantom extension is not installed",
+    "cant_disconnect": "Can't disconnect wallet, please try again later",
+    "unsupported_blockchain": "The selected blockchain isn't supported yet"
+  },
+  "success": {
+    "title": "Operation successful",
+    "update_complete": "Update completed successfully!"
+  }
+}

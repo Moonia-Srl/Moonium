@@ -1,0 +1,20 @@
+body {
+  .ant-popover {
+    .ant-popover-arrow {
+      display: none;
+    }
+    .ant-popover-inner {
+      background-color: $colors_bg;
+      border-radius: $size_base_multiplier * 2 !important;
+
+      .ant-popover-inner-content {
+        display: flex;
+        flex-direction: column;
+
+        > *:hover {
+          background-color: $colors_primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+body {
+  // Form and Form Item
+  .ant-form {
+    .ant-form-item {
+      .ant-form-item-label > label {
+        color: white;
+      }
+
+      .ant-form-item-control {
+        .ant-input {
+          color: white;
+          background-color: $colors_bg;
+          border-radius: $border_radius_card;
+
+          &:hover,
+          &:focus {
+            background-color: $colors_bg;
+            border: 2px solid $colors_primary;
+          }
+        }
+      }
+    }
+  }
+
+  // Select
+  .ant-select {
+    &.ant-select-focused {
+      .ant-select-selector {
+        border-color: $colors_primary; // !important;
+      }
+    }
+    .ant-select-selector {
+      color: white !important;
+      background-color: $colors_bg !important;
+      border-radius: $size_base_multiplier * 2 !important;
+
+      &.ant-select-selector-active,
+      &:hover {
+        border-color: $colors_primary !important;
+      }
+    }
+
+    .ant-select-arrow {
+      color: white;
+    }
+  }
+
+  .ant-select-dropdown {
+    color: white;
+    background-color: $colors_bg;
+
+    .ant-select-item {
+      color: white;
+      &.ant-select-item-option-active {
+        color: black;
+        background-color: $colors_primary;
+      }
+    }
+  }
+
+  // Input
+  .ant-input {
+    color: white;
+    background-color: $colors_bg;
+    border-radius: $size_base_multiplier * 2;
+
+    &:hover {
+      border-color: $colors_primary;
+    }
+  }
+}

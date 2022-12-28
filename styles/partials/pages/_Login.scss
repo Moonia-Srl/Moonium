@@ -1,0 +1,40 @@
+#login {
+  main {
+    height: 97vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ant-card {
+      width: 700px;
+      min-height: 55%;
+
+      @include respond-to(upto-md) {
+        width: 50%;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        gap: $size_base_multiplier * 4;
+        align-items: center;
+
+        h1 {
+          font-weight: bold;
+        }
+
+        img {
+          width: 30%;
+        }
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: $size_base_multiplier * 4;
+        align-items: center;
+      }
+    }
+  }
+}

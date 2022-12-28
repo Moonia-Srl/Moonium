@@ -1,0 +1,18 @@
+#not-found {
+  padding: 15vh 25vw;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    column-gap: $size_base_multiplier * 5;
+
+    .ant-btn {
+      align-self: center;
+      margin-top: $size_base_multiplier * 2;
+    }
+
+    img {
+      width: 50vw;
+    }
+  }
+}

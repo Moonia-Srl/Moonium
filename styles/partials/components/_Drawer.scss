@@ -1,0 +1,49 @@
+body {
+  .ant-drawer-content-wrapper {
+    width: $size_base_multiplier * 37;
+
+    .ant-drawer-content {
+      background-color: $colors_light_bg;
+    }
+
+    // Drawer content
+    .ant-drawer-header.ant-drawer-header-close-only {
+      background-color: $colors_light_bg;
+
+      // Drawer header/title
+      .ant-drawer-header-title {
+        justify-content: end;
+
+        // Close button/icon
+        .anticon-close {
+          font-size: $size_base_multiplier * 3;
+          color: $colors_text;
+
+          &:hover {
+            color: $colors_primary;
+          }
+        }
+      }
+    }
+
+    // Drawer body with button section links
+    .ant-drawer-body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      row-gap: $size_base_multiplier * 5;
+
+      padding: $size_base_multiplier * 4;
+
+      .ant-btn-link:hover {
+        span {
+          color: $colors_primary;
+        }
+      }
+
+      img {
+        width: 90%;
+      }
+    }
+  }
+}

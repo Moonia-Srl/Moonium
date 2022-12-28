@@ -1,0 +1,11 @@
+body {
+  .ant-modal-content {
+    color: white;
+    background-color: $colors_bg;
+
+    .ant-modal-confirm-title,
+    .ant-modal-confirm-content {
+      color: white;
+    }
+  }
+}

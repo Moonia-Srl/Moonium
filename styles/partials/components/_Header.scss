@@ -1,0 +1,41 @@
+// Header styles
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 38vw;
+
+  height: $size_base_multiplier * 9;
+  padding: $size_base_multiplier $size_base_multiplier * 5;
+
+  top: 0;
+  z-index: 2;
+  position: sticky;
+
+  box-shadow: $box_shadow !important;
+  background-color: $colors_bg !important;
+
+  @include respond-to(upto-sm) {
+    padding: $size_base_multiplier $size_base_multiplier * 3;
+  }
+
+  .logo {
+    height: $size_base_multiplier * 7;
+
+    @include respond-to(upto-sm) {
+      max-width: $size_base_multiplier * 14;
+    }
+  }
+
+  .avatar { width: 3vw; max-width: 40px; }
+
+  .ri {
+    color: white;
+    font-size: $size_base_multiplier * 4;
+    padding: $size_base_multiplier;
+
+    &:hover {
+      color: $colors_primary;
+    }
+  }
+}

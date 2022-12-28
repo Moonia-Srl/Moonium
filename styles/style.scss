@@ -1,0 +1,154 @@
+// SCSS Variables
+@import './variables';
+
+// Mixins
+@import './mixins/responsive';
+
+// Pages partials
+@import './partials/pages/404';
+@import './partials/pages/Home';
+@import './partials/pages/Me';
+@import './partials/pages/Login';
+
+// Components partials
+@import './partials/components/Card';
+@import './partials/components/Drawer';
+@import './partials/components/Form';
+@import './partials/components/Header';
+@import './partials/components/Modal';
+@import './partials/components/NFTs';
+@import './partials/components/Notification';
+@import './partials/components/Popover';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  // min-width: fit-content;
+  font-family: $font_poppins;
+  background-color: $colors_bg !important;
+}
+
+body {
+  h1 {
+    color: $colors_text;
+    font-size: $font_size_h1;
+    font-family: $font_poppins;
+  }
+
+  h2 {
+    color: $colors_text;
+    font-size: $font_size_h2;
+    font-family: $font_poppins;
+  }
+
+  h3 {
+    color: $colors_text;
+    font-size: $font_size_h3;
+    font-family: $font_poppins;
+  }
+
+  h4 {
+    color: $colors_text;
+    font-size: $font_size_h4;
+    font-family: $font_poppins;
+  }
+
+  h5 {
+    color: $colors_text;
+    font-size: $font_size_h5;
+    font-family: $font_poppins;
+  }
+
+  h6 {
+    color: $colors_text;
+    font-size: $font_size_h6;
+    font-family: $font_poppins;
+  }
+
+  p,
+  span {
+    color: $colors_text;
+    font-size: $font_size_text;
+    font-family: $font_poppins;
+  }
+
+  a {
+    color: $colors_primary;
+    font-size: $font_size_text;
+    font-family: $font_poppins;
+
+    &:hover {
+      color: $colors_primary;
+      text-decoration: underline;
+    }
+  }
+
+  *::selection {
+    background: $colors_primary;
+  }
+
+  .ant-btn {
+    font-weight: bold;
+    font-family: $font_poppins;
+    font-size: $font_size_text;
+
+    text-align: center;
+    height: $size_base_multiplier * 5;
+    border-radius: $size_base_multiplier;
+
+    &.ant-btn-default {
+      color: white;
+      background-color: $colors_bg;
+      border-color: grey;
+    }
+
+    &.ant-btn-primary {
+      color: $colors_light_bg;
+      background-color: $colors_primary;
+      border-color: $colors_primary;
+      // Text content of the button
+      span {
+        color: $colors_bg;
+      }
+    }
+
+    &.ant-btn-link {
+      color: $colors_text;
+    }
+  }
+}
+
+// Shared style for all content based pages
+.page {
+  main {
+    padding: $size_base_multiplier * 5 $size_base_multiplier * 7;
+  }
+}
+
+// Shared style for Cookie Policy, Privacy Policy e Terms of Service pages
+.policy-page {
+  padding: 7%;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond-to(upto-sm) {
+      flex-direction: column-reverse;
+      gap: 3 * $size_base_multiplier;
+    }
+
+    margin-bottom: 7%;
+    padding: 3 * $size_base_multiplier;
+  }
+}
