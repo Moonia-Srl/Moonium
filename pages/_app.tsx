@@ -9,7 +9,7 @@ import 'remixicon/fonts/remixicon.css';
 import '../styles/style.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const config = {
+  const SWRCfg = {
     // Retires the same request 3 times before failing completely
     errorRetryCount: 1,
     // Avoids making the same request in the given time window
@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   console.warn(`Moonium v${process.env.NEXT_PUBLIC_MOONIUM_VERSION}`);
 
   return (
-    <SWRConfig value={config}>
+    <SWRConfig value={SWRCfg}>
       <AuthProvider>
         <Web3Provider>
           <Component {...pageProps} />

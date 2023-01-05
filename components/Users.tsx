@@ -17,7 +17,7 @@ const UserForm = ({ init, onSubmit }: FormProps) => {
   const { t } = useTranslation();
 
   // prettier-ignore
-  const { formState: { errors }, handleSubmit, register, reset } = useForm<UserInfo>({
+  const { formState: { isValid, errors }, handleSubmit, register, reset } = useForm<UserInfo>({
     // React Hook Form configuration
     mode: 'onChange',
     defaultValues: { name: '', surname: '', email: '', phone: '' },
@@ -38,7 +38,7 @@ const UserForm = ({ init, onSubmit }: FormProps) => {
         validateStatus={errors.name && 'error'}
         help={errors.name?.message}
       >
-        <input className="ant-input ant-input-lg" {...register('name')} />
+        <input className="ant-input ant-input-lg" {...register('name')} autoComplete="off" />
       </Form.Item>
 
       <Form.Item
@@ -46,7 +46,7 @@ const UserForm = ({ init, onSubmit }: FormProps) => {
         validateStatus={errors.surname && 'error'}
         help={errors.surname?.message}
       >
-        <input className="ant-input ant-input-lg" {...register('surname')} />
+        <input className="ant-input ant-input-lg" {...register('surname')} autoComplete="off" />
       </Form.Item>
 
       <Form.Item
@@ -54,7 +54,7 @@ const UserForm = ({ init, onSubmit }: FormProps) => {
         validateStatus={errors.email && 'error'}
         help={errors.email?.message}
       >
-        <input className="ant-input ant-input-lg" {...register('email')} />
+        <input className="ant-input ant-input-lg" {...register('email')} autoComplete="off" />
       </Form.Item>
 
       <Form.Item
@@ -62,11 +62,11 @@ const UserForm = ({ init, onSubmit }: FormProps) => {
         validateStatus={errors.phone && 'error'}
         help={errors.phone?.message}
       >
-        <input className="ant-input ant-input-lg" {...register('phone')} />
+        <input className="ant-input ant-input-lg" {...register('phone')} autoComplete="off" />
       </Form.Item>
 
       <div className="footer">
-        <Button type="primary" onClick={handleSubmit(onSubmit)}>
+        <Button type="primary" disabled={!isValid} onClick={handleSubmit(onSubmit)}>
           {t('pages.me.form.submit')}
         </Button>
       </div>

@@ -4,6 +4,7 @@
  */
 export enum Blockchain {
   Eth = 'ETHEREUM',
+  Pol = 'POLYGON',
   Sol = 'SOLANA'
 }
 

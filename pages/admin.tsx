@@ -24,15 +24,15 @@ export const exportNFTOwners = async (contracts: string[]) => {
 
   // Creates the query string with the desired constraints
   const query = RequestQueryBuilder.create()
-    .select(['tokenId', 'name', 'supply', 'owner'])
+    .select(['name'])
+    // Joins the registered owner data
+    .setJoin({ field: 'contract', select: ['name', 'symbol'] })
+    .setJoin({ field: 'owner', select: ['wallet', 'name', 'surname', 'email', 'phone'] })
     // Filter out the NFTs not related to current project's Smart Contract
     .setFilter({ field: 'contract.address', operator: CondOperator.IN, value: contracts })
-    .setJoin({ field: 'contract', select: ['address'] })
-    // Joins the registered owner data
     .setFilter({ field: 'owner.email', operator: CondOperator.NOT_EQUALS, value: ' ' })
-    .setJoin({ field: 'owner' })
     // Sort by addition date (newest -> oldest)
-    .sortBy({ field: 'created_at', order: 'ASC' })
+    .sortBy({ field: 'owner.wallet', order: 'ASC' })
     .query(false);
 
   // Makes the API call and parses the response's body

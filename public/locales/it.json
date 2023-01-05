@@ -71,6 +71,9 @@
         "cancel": "Annulla",
         "accept": "Accetta"
       }
+    },
+    "nft": {
+      "see": "Visualizza NFT"
     }
   },
   "forms": {

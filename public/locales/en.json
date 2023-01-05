@@ -71,6 +71,9 @@
         "cancel": "Cancel",
         "accept": "Accept"
       }
+    },
+    "nft": {
+      "see": "See NFT"
     }
   },
   "forms": {

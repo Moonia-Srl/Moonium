@@ -93,9 +93,9 @@ export const Web3Provider = ({ children }: { children: ReactNode }) => {
 
     switch (blockchain) {
       case Blockchain.Eth:
-        return ethereum.disconnect(t).then(() => {}); //.then(onSuccess).catch(onError);
+        return ethereum.disconnect(t).then(() => { }); //.then(onSuccess).catch(onError);
       case Blockchain.Sol:
-        return solana.disconnect(t).then(() => {}); //.then(onSuccess).catch(onError);
+        return solana.disconnect(t).then(() => { }); //.then(onSuccess).catch(onError);
       default:
         throw Error(t('errors.unsupported_blockchain'));
     }

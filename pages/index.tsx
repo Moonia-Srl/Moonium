@@ -4,13 +4,13 @@ import { NextPage } from 'next';
 import { useMemo } from 'react';
 import useSWR from 'swr';
 
-import useTranslation from '../hooks/useTranslation';
 import ConnectWallet from '../components/ConnectWallet';
 import Header from '../components/Header';
 import { NFTList } from '../components/NFTs';
 import SEO from '../components/SEO';
 import { useWeb3 } from '../context/web3';
 import useProject from '../hooks/useProject';
+import useTranslation from '../hooks/useTranslation';
 import useUser from '../hooks/useUser';
 import { ApiUrl } from '../schema/const';
 import { Endpoint } from '../schema/enum';
