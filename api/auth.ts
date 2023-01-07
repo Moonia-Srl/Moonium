@@ -36,17 +36,17 @@ export const login = async (credentials: Login): Promise<Admin> => {
   const res = await fetch(`${ApiUrl}${Endpoint.AuthLogin}`, { method: 'POST', headers, body });
   // If the API call failed then an error is throw
   if (res.status !== 201) throw 'errors.auth_failed';
-  const { accessToken, refreshToken, payload } = await res.json();
+  const { access, refresh, payload } = await res.json();
 
   // Checks that the API returned the correct payload
-  if (!accessToken || !refreshToken || !payload._id) throw 'errors.auth_failed';
+  if (!access || !refresh || !payload) throw 'errors.auth_failed';
 
   // Saves locally the access token and refresh token
-  localStorage.setItem('AccessToken', accessToken);
-  localStorage.setItem('RefreshToken', refreshToken);
+  localStorage.setItem('AccessToken', access);
+  localStorage.setItem('RefreshToken', refresh);
 
   // Returns the authenticated Admin
-  return await getAdminById(payload._id);
+  return payload;
 };
 
 /**
@@ -67,14 +67,14 @@ export const refresh = async (): Promise<Admin> => {
   const res = await fetch(`${ApiUrl}${Endpoint.AuthRefresh}`, { method: 'POST', headers, body });
   // If the API call failed then an error is throw
   if (res.status !== 201) throw 'errors.token_expired';
-  const { accessToken, refreshToken, payload } = await res.json();
+  const { access, refresh, payload } = await res.json();
 
   // Checks that the API returned the correct payload
-  if (!accessToken || !refreshToken || !payload) throw 'errors.token_expired';
+  if (!access || !refresh || !payload) throw 'errors.token_expired';
 
   // Saves locally the access token and refresh token
-  localStorage.setItem('AccessToken', accessToken);
-  localStorage.setItem('RefreshToken', refreshToken);
+  localStorage.setItem('AccessToken', access);
+  localStorage.setItem('RefreshToken', refresh);
 
   // Returns the authenticated Admin
   return payload;
