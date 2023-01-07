@@ -20,14 +20,14 @@ deploy_env = {
         "env": "production",
         "name": "Production",
         "ip": "51.158.42.69",
-        "path": "Production/Client",
+        "path": "Production/Moonium",
 
     },
     "staging": {
         "env": "test",
         "name": "Staging",
         "ip": "51.158.42.69",
-        "path": "Staging/Client"
+        "path": "Staging/Moonium"
     },
 }[sys.argv[1]]
 
