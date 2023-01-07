@@ -31,7 +31,7 @@ const useProject = () => {
   // onMount determines which project slug use to fetch the needed data
   useEffect(() => {
     // If we're in development then we fetch a default environment
-    if (process.env.NEXT_PUBLIC_NODE_ENV === 'development') setSlug('moonia-dev');
+    if (process.env.NEXT_PUBLIC_NODE_ENV === 'development') setSlug('humanification');
     // If we're in staging then we fetch the environment based on the first param
     else if (process.env.NEXT_PUBLIC_NODE_ENV === 'staging')
       setSlug(window.location.hostname.replace(DomainUrlRegex, '$1'));

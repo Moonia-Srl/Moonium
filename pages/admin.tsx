@@ -30,7 +30,6 @@ export const exportNFTOwners = async (contracts: string[]) => {
     .setJoin({ field: 'owner', select: ['wallet', 'name', 'surname', 'email', 'phone'] })
     // Filter out the NFTs not related to current project's Smart Contract
     .setFilter({ field: 'contract.address', operator: CondOperator.IN, value: contracts })
-    .setFilter({ field: 'owner.email', operator: CondOperator.NOT_EQUALS, value: ' ' })
     // Sort by addition date (newest -> oldest)
     .sortBy({ field: 'owner.wallet', order: 'ASC' })
     .query(false);
