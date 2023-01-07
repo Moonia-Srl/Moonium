@@ -66,8 +66,6 @@ const useUser = () => {
     swrMutate(upsertUser(patched, t), options);
   };
 
-  console.log('BP__ useUser', data, error); // TODO REMOVE
-
   return { user: data, isLoading: !error && !data, error: errorKey, mutate };
 };
 

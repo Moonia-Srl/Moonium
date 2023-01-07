@@ -37,8 +37,6 @@ export const Web3Provider = ({ children }: { children: ReactNode }) => {
   // Data state to save chain id and wallet address, this can be changed also from Metamask
   const [data, setData] = useState<Web3Info | null>(null);
 
-  console.log('BP__ useWeb3', data);
-
   /**
    * Handles the correct connection/disconnection from the wallet provider
    * @function

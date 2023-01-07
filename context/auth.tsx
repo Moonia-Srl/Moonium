@@ -36,8 +36,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [error, setError] = useState<string>('');
   const [admin, setAdmin] = useState<Admin | null>(null);
 
-  console.log('BP__ useAuth', admin, loading, error);
-
   // Callback to execute on API call success
   const onSuccess = useCallback((admin: Admin) => {
     setAdmin(admin), setLoading(false);

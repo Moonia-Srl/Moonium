@@ -45,8 +45,6 @@ const useProject = () => {
     document.documentElement.style.setProperty('--primary-color', themeColor);
   }, [data]);
 
-  console.log('BP__ useProject', data, error); // TODO REMOVE
-
   // Redirects to 404 page if the project can't be fetched
   if (!!error && window.location.pathname !== Routes.NotFound) Router.push(Routes.NotFound);
 
